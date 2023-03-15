@@ -1,0 +1,40 @@
+body{
+    margin: 20px;
+}
+a:link{
+    color:rgb(4,135,12,1);
+}
+a:visited{
+    color: hotpink;
+}
+
+.outer{
+    padding: 20px;
+    border:solid black;
+}
+.box{
+    background-color: rebeccapurple;
+    color: white;
+    margin: 3%;
+    padding: 1px;
+    height: 55%;
+}
+
+h1{
+color:violet
+}
+h3{
+    color: lightslategray;
+}
+
+svg{
+    width: 20px;
+}
+.linha{
+    border-top: 10px;
+    border-bottom:0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: black;
+    border-style:dotted;
+}
