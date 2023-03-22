@@ -23,6 +23,21 @@
     </div>
 
     <div>
+        <h2>ver data hora</h2>
+        <p>clique para ver a data hora</p>
+        <button onclick="document.getElementById('exibir').innerHTML = Date()">ver data hora</button>
+        <!--exibir data-->
+        <p id="exibir"></p>
+    </div>
+    <div>
+        <h2>transferir informação com js</h2>
+        <p id="par1">este paragrafo vai pra baixo do botao</p>
+        <button onclick="myFunction()">clique para copiar</button>
+        <p id="par2"></p>
+    </div>
+
+
+    <div>
         <div class="outer">
             <center>
             <p><b>Informaçoes de Contato</b></p>
@@ -38,5 +53,11 @@
             </div>
         </div>
     </div>
+    <script>
+            function myFunction(){
+                var x = document.getElementById("par1").innerHTML;
+                document.getElementById("par2").innerHTML = x;
+            }
+    </script>
 </body>
 </html>
