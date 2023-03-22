@@ -29,11 +29,22 @@
         <!--exibir data-->
         <p id="exibir"></p>
     </div>
+
     <div>
         <h2>transferir informação com js</h2>
         <p id="par1">este paragrafo vai pra baixo do botao</p>
         <button onclick="myFunction()">clique para copiar</button>
         <p id="par2"></p>
+    </div>
+
+    <div>
+        <h2>editando o src de uma imagem</h2>
+        <p>java script edita fonte de uma imagem</p>
+
+        <button id="liga" onclick="ligar()">acender</button>
+        <img id="lampada" src="https://www.w3schools.com/js/pic_bulbon.gif">
+        <button id="apaga" onclick="desligar()">apagar</button>
+
     </div>
 
 
@@ -53,7 +64,16 @@
             </div>
         </div>
     </div>
+
     <script>
+            function ligar(){
+                document.getElementById('lampada').src ="https://www.w3schools.com/js/pic_bulbon.gif";
+
+            }
+            function desligar(){
+               document.getElementById('lampada').src ="https://www.w3schools.com/js/pic_bulboff.gif";
+            }
+
             function myFunction(){
                 var x = document.getElementById("par1").innerHTML;
                 document.getElementById("par2").innerHTML = x;
