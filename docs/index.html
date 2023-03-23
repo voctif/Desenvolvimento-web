@@ -44,7 +44,12 @@
         <button id="liga" onclick="ligar()">acender</button>
         <img id="lampada" src="https://www.w3schools.com/js/pic_bulbon.gif">
         <button id="apaga" onclick="desligar()">apagar</button>
+    </div>
 
+    <div>
+        <h2 id="pstyle"> alterando esitlo js</h2>
+        <p>esse paragrafo vai mudar quando clicar</p>
+        <button id="mudar" onclick="mudar()" onmouseover="mudar()">clique pra editar</button>
     </div>
 
 
@@ -68,7 +73,6 @@
     <script>
             function ligar(){
                 document.getElementById('lampada').src ="https://www.w3schools.com/js/pic_bulbon.gif";
-
             }
             function desligar(){
                document.getElementById('lampada').src ="https://www.w3schools.com/js/pic_bulboff.gif";
@@ -77,6 +81,10 @@
             function myFunction(){
                 var x = document.getElementById("par1").innerHTML;
                 document.getElementById("par2").innerHTML = x;
+            }
+
+            function mudar(){
+                document.getElementById("pstyle").style.fontSize="35px";
             }
     </script>
 </body>
