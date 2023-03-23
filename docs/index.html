@@ -42,7 +42,7 @@
         <p>java script edita fonte de uma imagem</p>
 
         <button id="liga" onclick="ligar()">acender</button>
-        <img id="lampada" src="https://www.w3schools.com/js/pic_bulbon.gif">
+        <img width="10%" height="10%" id="lampada" src="gato1.jpg">
         <button id="apaga" onclick="desligar()">apagar</button>
     </div>
 
@@ -72,10 +72,10 @@
 
     <script>
             function ligar(){
-                document.getElementById('lampada').src ="https://www.w3schools.com/js/pic_bulbon.gif";
+                document.getElementById('lampada').src="gato1.jpg" ;
             }
             function desligar(){
-               document.getElementById('lampada').src ="https://www.w3schools.com/js/pic_bulboff.gif";
+               document.getElementById('lampada').src="gato2.png";
             }
 
             function myFunction(){
@@ -85,6 +85,10 @@
 
             function mudar(){
                 document.getElementById("pstyle").style.fontSize="35px";
+            }
+
+            function janela(){
+                window.alert("uma mensagem");
             }
     </script>
 </body>
