@@ -1,0 +1,24 @@
+body{
+    background-color: #212529;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.fonteletra{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
+}
+
+.linha-horizontal{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+a:hover{
+    color:#6E0AAF !important;
+}
+
+.margintitulo{
+    margin-top: 10% !important;
+}
+  
