@@ -1,5 +1,5 @@
 body{
-    background-color: #212529;
+    background-color: #121212;
     margin: 0;
     padding: 0;
     margin: 0 auto;
@@ -14,11 +14,42 @@ body{
     border-bottom: 1px solid #fff;
 }
 
-a:hover{
+.hoverroxo{
+    color: #fff;
+}
+.hoverroxo:hover{
     color:#6E0AAF !important;
 }
 
+.botaohabilidade{
+    background-image: linear-gradient(40deg,#7c12bf 0%,#bf04e5 100%);
+}
+.botaoinicio{
+    background-image: linear-gradient(40deg,#7c12bf 0%,#bf04e5 100%);
+}
+.botaoinicio:hover{
+    opacity:0.5;
+}
+
 .margintitulo{
-    margin-top: 10% !important;
+    margin-top: 17% !important;
+}
+.marginskills{
+    margin-top:20% !important;
+}
+
+.centralizarimg{
+    display: flex !important;
+    justify-content: center  !important;
 }
   
+@media screen and (max-width: 480px){
+#imgtopo{
+display: none !important;
+}
+}
+
+.justificado{
+    text-align: justify  !important;
+}
+
