@@ -57,3 +57,41 @@ display: none !important;
     text-align: justify  !important;
 }
 
+/*CARD EFEITOS*/
+.card{
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#texto-animado::after{
+    content: '|';
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
+
+#texto-animado {
+    overflow: hidden; 
+    font-size: 24px;
+    white-space: nowrap; 
+    margin: 0 auto; 
+  }
+ 
+  .animar {
+    animation: digitar 2s steps(30, end);
+  }
+  
+  @keyframes digitar {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
