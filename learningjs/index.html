@@ -10,41 +10,55 @@
 
     <link rel="stylesheet" href="css/css.css" >
     <script src="js/index.js"></script>
-    <title>Document</title>
+    <title>Sorteador</title>
 </head>
-<body>
-    <div class="container-fluid">
-        <div>
-            <h2 id="s">sortiador</h2>
-            <input type="number" id='mandar' placeholder="min">
-            <input type="number" id='mandar2' placeholder="max">
-    
-            <button id="sortear" onclick="sortear()">sortear</button>
-            <span id="sor"></span>
+<body >
+
+    <div class="container-fluid" style="background-color: #353535;">
+        <div class="container p-3 ">
+            <p class="fs-2 fw-bolder" style="color:#D9D9D9;">Sorteador</p>
+        </div> 
+    </div>
+
+
+    <div class="container-fluid teste" style="background-color: #3C6E71;">
+        <div class="col-md-12">
+            <div class="row justify-content-center">
+                <!--box contador-->
+                <div class="col-md-5 py-5 px-5 my-5 bordaS " style="background-color:#353535;">
+                    <h3 style="color:white" class="mb-5 fw-semibold">Sorteador de números</h3>
+                    <!--form-->
+                    <div class="bordaNum text-center pb-0" style="background-color: #3C6E71;">
+                        <div class="row my-3 mx-3">
+                            <div class="col ">
+                                <p class="fs-4" style="color:white">sortear entre</p>
+                            </div>
+                            <div class="col order-2 ">
+                                <input type="text" class="form-control inputform" id="mandar" aria-describedby="">
+                            </div>
+                            <div class="col order-3">
+                                <p class="fs-4" style="color:white">e</p>
+                            </div>
+                            <div class="col order-4">
+                                <input type="text" class="form-control inputform" id="mandar2" aria-describedby="">
+                            </div>
+                          </div>
+                        
+                    </div>
+                    <br>
+                    <div class="d-grid gap-2">
+                        <button id="sortear" class="btn btn-primary" type="button" onclick="sortear()">Sortear</button>
+                    </div>
+                    <!--resultado-->
+                    <br>
+                    <div class="text-center">
+                        <span id="sor" class="fs-4 " style="color:white"></span>
+                    </div>
+                 </div>
+            </div>
         </div>
-    </div>
-    <!--
-    <div>
-        <h2 id="t">tabuada do numero</h2>
-        <input type="number" id='tabuada' placeholder="numero">
-        <button onclick="tabuada()">calcular</button>
-        <div id="result"></div>
-    </div>
-    <div>
-        <h2 id="c">contador</h2>
-        <button id="contador" onclick="conta()">calcular</button>
-        <span id="cliqu"></span>
-    </div>
-    <div>
-        <h2 id="s">sortiador</h2>
-        <input type="number" id='mandar' placeholder="numero">
-        <input type="number" id='mandar2' placeholder="numero">
 
-        <button id="sortear" onclick="sortear()">sortear</button>
-        <span id="sor"></span>
     </div>
-    -->
-
 
 </body>
 </html>
