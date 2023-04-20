@@ -11,8 +11,8 @@
     <script src="https://kit.fontawesome.com/fb6d262ee9.js" crossorigin="anonymous"></script>
     <title>Trabalho 1 bimestre</title>
 </head>
-<body>
-    <div class="container bg-danger">
+<body style="background-color: #242128;">
+    <div class="container">
         <div class="row mt-5">
             <div class="col-md-2 border-black">
                 <div class="row text-center">
@@ -20,8 +20,8 @@
             </div>
             <div class="col-md-8  border-black">
                 <div class="row ">
-                    <h2 class="text-center">Montar historia</h2>
-                    <form class="border border-black py-2">
+                    <h2 class="text-center mb-4 fw-semibold" style="color:white; ">Montar historia</h2>
+                    <form class="border py-2 bg-white formul">
                         <p>Um grande ___  passeava pela margem de um riacho.</p>
                         <!--OPTION-->
                         <select id="personagem" class="form-select form-select-sm" aria-label=".form-select-sm example">
@@ -30,7 +30,8 @@
                             <option value="macaco">Macaco</option>
                             <option value="tigre">Tigre</option>
                         </select>
-                        <p>A rã ficou com muita inveja de seu __</p>
+                        <div class="linha-horizontal mt-3"></div>
+                        <p class="mt-2">A rã ficou com muita inveja de seu __</p>
                         <!--checkbox-->
                         <div>
                             <p>tamanho
@@ -43,24 +44,25 @@
                                 <input type="checkbox" value="inteligencia">
                             </p>
                         </div>
+                        <div class="linha-horizontal mt-3 mb-2"></div>
+
                         <p>Então, começou a inchar, fazendo enorme esforço<br>Pela terceira vez, a rã tentou
                              inchar. Mas fez isso com tanta força que acabou</p>
                              <!--radio-->
                         <p>
-                            Desistindo
-                            <input type="radio" name="acao" value="desistindo"></input>
-                            Explodindo
-                            <input type="radio" name="acao" value="explodindo"></input>
-                            Voando
-                            <input type="radio" name="acao" value="voando"></input>
+                            
+                            
+                            <input type="radio" name="acao" value="desistindo"></input>Desistindo<br>
+                            <input type="radio" name="acao" value="explodindo"></input>Explodindo<br>
+                            <input type="radio" name="acao" value="voando"></input>Voando
                         </p>  
-                        <button onclick="criarhistoria()" type="button" class="btn btn-primary">Criar historia</button>
+                        <button onclick="criarhistoria()" type="button" class="btn btn-primary botao">Criar historia</button>
                     </form>
-                    <p>Um grande <span class="result">____</span> passeava pela margem de um riacho.
+                    <p style="color:white;" id="finalhistoria">Um grande <span class="result">____</span> passeava pela margem de um riacho.
                         A rã ficou com muita inveja de seu <span id="atributo">____</span>
                         Então, começou a inchar, fazendo enorme esforço, Pela terceira vez, a rã tentou
                          inchar. Mas fez isso com tanta força que acabou <span id="acao">___</span>
-                         <span id="teste">___</span>
+                         
                     </p>
                 </div>
             </div>
