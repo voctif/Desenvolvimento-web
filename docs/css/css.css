@@ -1,40 +1,132 @@
+/*historia*/
+.formul{
+    border-radius: 5px;
+}
+
+.linha-horizontal{
+    width: 100%;
+    border-bottom: 1px solid #242128;
+}
+
+/*sorteador*/
+.bordaS{
+    border-radius: 10px !important;
+}
+
+.bordaNum{
+    border: 2px solid #D9D9D9 ;
+    border-radius: 10px ;
+
+}
+
+.inputform{
+    background-color: #D9D9D9 ;
+}
+
+body, html{
+    height: 100%;
+  }
+
+.teste{
+    height: 100%;
+}
+
+
+/*curriculo*/
 body{
-    margin: 20px;
-}
-a:link{
-    color:rgb(4,135,12,1);
-}
-a:visited{
-    color: hotpink;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
 }
 
-.outer{
-    padding: 20px;
-    border:solid black;
-}
-.box{
-    background-color: rebeccapurple;
-    color: white;
-    margin: 3%;
-    padding: 1px;
-    height: 55%;
+.fonteletra{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;	
 }
 
-h1{
-color:violet
+.linha-horizontal{
+    width: 100%;
+    border-bottom: 1px solid #fff;
 }
-h3{
-    color: lightslategray;
+.linha-horizontal2{
+    width: 100%;
+    border-bottom: 2px solid #151316;
 }
 
-svg{
-    width: 20px;
+.hoverroxo{
+    color: #fff;
 }
-.linha{
-    border-top: 10px;
-    border-bottom:0px;
-    border-left: 0px;
-    border-right: 0px;
-    color: black;
-    border-style:dotted;
+.hoverroxo:hover{
+    color:#6E0AAF !important;
 }
+
+.botaohabilidade{
+    background-image: linear-gradient(40deg,#7c12bf 0%,#bf04e5 100%);
+}
+.botaoinicio{
+    background-image: linear-gradient(40deg,#7c12bf 0%,#bf04e5 100%);
+}
+.botaoinicio:hover{
+    opacity:0.5;
+}
+
+.margintitulo{
+    margin-top: 17% !important;
+}
+.marginskills{
+    margin-top:20% !important;
+}
+
+.centralizarimg{
+    display: flex !important;
+    justify-content: center  !important;
+}
+  
+@media screen and (max-width: 480px){
+#imgtopo{
+display: none !important;
+}
+}
+
+.justificado{
+    text-align: justify  !important;
+}
+
+/*CARD EFEITOS*/
+.card{
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+#texto-animado::after{
+    content: '|';
+    margin-left: 4px;
+    animation: blink 0.7s infinite;
+
+}
+
+@keyframes blink{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
+
+#texto-animado {
+    overflow: hidden; 
+    font-size: 24px;
+    white-space: nowrap; 
+    margin: 0 auto; 
+  }
+ 
+  .animar {
+    animation: digitar 2s steps(30, end);
+  }
+  
+  @keyframes digitar {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
